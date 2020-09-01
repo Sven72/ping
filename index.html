@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <div class="flex-container">
+    <!-- Content container? -->
+    <div class="logo"><img src="./images/logo.svg" alt="company logo" /></div>
+    <h1 class="hero--headline center">
+      We are launching <span class="hero--headline__bold">soon!</span>
+    </h1>
+    <h2 class="hero--cta center">Subscribe and get notified</h2>
+    <form class="hero-input--container center">
+      <!-- form tag? -->
+      <label class="center" for="email"></label>
+      <input class="hero--input center" type="email" id="email" aria-label="Email Address" name="email"
+        placeholder="Your email adress..." required />
+      <p class="alert-message">Please provide a valid email adress…</p>
+      <input class="center" id="submitButton" type="button" value="Notify Me" />
+    </form>
+
+    <img src="./images/illustration-dashboard.png" alt="Four charts which symbolize the companys' offering"
+      class="hero--image center" />
+    <div class="hero--social-media center">
+      <a href="#">
+        <ion-icon class="test" name="logo-facebook"></ion-icon>
+      </a>
+
+      <a href="#">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      <a href="#">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    </div>
+    <p class="hero--legal">
+      &copy; Copyright Ping. All rights reserved.
+    </p>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Sven</a>.
+    </p>
+  </footer>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
