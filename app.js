@@ -24,7 +24,7 @@ function validate() {
     : message.classList.remove("error") &&
       message.classList.remove("input-error");
 
-  input.addEventListener("input", evt => {
+  input.addEventListener("input", e => {
     const value = input.value;
 
     const trimmed = value.trim();
