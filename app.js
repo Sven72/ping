@@ -1,6 +1,7 @@
 let submitBtn = document.getElementById("submitButton");
 
-// let email = document.getElementById("email");
+let input = document.getElementById("email");
+console.log(input);
 
 submitBtn.addEventListener("click", e => {
   e.preventDefault();
@@ -22,4 +23,18 @@ function validate() {
     ? message.classList.add("error") && message.classList.add("input-error")
     : message.classList.remove("error") &&
       message.classList.remove("input-error");
+
+  input.addEventListener("input", evt => {
+    const value = input.value;
+
+    const trimmed = value.trim();
+
+    if (trimmed) {
+      message.classList.remove("error") &&
+        message.classList.remove("input-error");
+    } else {
+      return;
+      // input.dataset.state = "invalid";
+    }
+  });
 }
